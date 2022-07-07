@@ -6,20 +6,33 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Mark's Homepage</h1>
+    <h1>Mark's homepage</h1>
     <p class="mypara">This page is my first webpage.</p>
-    <img src="thor.png" alt="Thor is cool" width="300px">
+    <img id="myimg" src="thor.png" alt="Thor is cool" width="300px">
     <br>
     <a href="http://www.marvel.com">marvel comics</a>
     <ol>
-        <li>Thor</li>
-        <li>Spider man</li>
-        <li>Daredevil</li>
+        <li>
+          <a href="#" onclick="setimg('thor.png')">Thor</a>
+        </li>
+        <li>
+          <a href="#" onclick="setimg('spidey.png')">Spider man</a>
+        </li>
+        <li>
+          <a href="#" onclick="setimg('dd.png')">Daredevil</a>
+        </li>
         <li>Batman</li>
-        <li>Green lantern</li>
+        <li>
+          <a href="#" onclick="setimg('green.gif')">Green lantern</a>
+        </li>
         <li>Deadpool</li>
         <li>Pikachu</li>
         <li>Charmander</li>
     </ol>
   </body>
+  <script type="text/javascript">
+    function setimg(imgname) {
+      document.getElementById('myimg').src = imgname;
+    }
+  </script>
 </html>
